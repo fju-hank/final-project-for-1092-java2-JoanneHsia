@@ -1,2 +1,8 @@
+com/fju/drink/Drink.java
+ com.fju.drink.Drink
 com/fju/Tester.java
  com.fju.Tester
+com/fju/drink/Drink1.java
+ com.fju.drink.Drink1
+com/fju/drink/Tester.java
+ com.fju.drink.Tester
