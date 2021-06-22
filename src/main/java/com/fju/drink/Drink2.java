@@ -1,8 +1,8 @@
 package com.fju.drink;
 
-public class Drink1 extends Drink{
-        public Drink1() {
-            sparklingWater = "Original";
+public class Drink2 extends Drink{
+        public Drink2() {
+            sparklingWater = "Lemon";
             ice1 = "Regular ice";
             ice2 = "Less ice";
             ice3 = "No ice";
@@ -14,12 +14,11 @@ public class Drink1 extends Drink{
 
     @Override
     public String getName() {
-
-            return "Drink1";
+            return "Drink2";
     }
 
     @Override
     public int getPrice() {
-            return 60;
+            return 70;
     }
 }
