@@ -2,7 +2,25 @@ com/fju/drink/Drink.java
  com.fju.drink.Drink
 com/fju/Tester.java
  com.fju.Tester
+com/fju/drink/Drink6.java
+ com.fju.drink.Drink6
+com/fju/drink/Drink3.java
+ com.fju.drink.Drink3
 com/fju/drink/Drink1.java
  com.fju.drink.Drink1
+com/fju/drink/Drink4.java
+ com.fju.drink.Drink4
+com/fju/drink/Drink2.java
+ com.fju.drink.Drink2
+com/fju/drink/Drink5.java
+ com.fju.drink.Drink5
 com/fju/drink/Tester.java
  com.fju.drink.Tester
+com/fju/sparklingdrink/Drink1.java
+ com.fju.sparklingdrink.Drink1
+com/fju/sparklingdrink/Drink2.java
+ com.fju.sparklingdrink.Drink2
+com/fju/sparklingdrink/Drink.java
+ com.fju.sparklingdrink.Drink
+com/fju/sparklingdrink/Tester.java
+ com.fju.sparklingdrink.Tester
