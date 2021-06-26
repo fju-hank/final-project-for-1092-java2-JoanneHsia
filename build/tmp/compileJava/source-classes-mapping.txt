@@ -38,5 +38,15 @@ com/fju/sparklingdrink/Drink6.java
  com.fju.sparklingdrink.Drink6
 com/fju/sparklingdrink/Drink7.java
  com.fju.sparklingdrink.Drink7
+com/fju/sparklingdrink/Ice.java
+ com.fju.sparklingdrink.Ice
+com/fju/sparklingdrink/Ice1.java
+ com.fju.sparklingdrink.Ice1
+com/fju/sparklingdrink/Ice4.java
+ com.fju.sparklingdrink.Ice4
+com/fju/sparklingdrink/Ice2.java
+ com.fju.sparklingdrink.Ice2
+com/fju/sparklingdrink/Ice3.java
+ com.fju.sparklingdrink.Ice3
 com/fju/sparklingdrink/Tester.java
  com.fju.sparklingdrink.Tester
