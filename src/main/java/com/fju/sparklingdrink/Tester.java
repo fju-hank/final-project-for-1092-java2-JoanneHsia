@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Tester {
     public static void main(String[] args) {
-        Drink[] drinks = {new Drink1(), new Drink2()};
+        Drink[] drinks = {new Drink1(),new Drink2(),new Drink3(),new Drink4(),new Drink5(),
+                new Drink6(),new Drink7(),new Drink8(), new Drink9(),new Drink10()};
         for (Drink drink : drinks) {
             System.out.print(drink.no);
             System.out.print(drink.getName());
