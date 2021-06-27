@@ -9,7 +9,7 @@ public class Tester {
         Topping[] toppings = {new Topping1(), new Topping2(), new Topping3()};
 
         int total;
-        int end = -1;
+        int end = 1;
 
         while (end != 0){
             System.out.println("[氣泡水菜單]");
@@ -56,7 +56,10 @@ public class Tester {
                 System.out.println("總金額："+total);
             }
 
+            System.out.println("是否繼續選購？1繼續/0結束");
+            end = Integer.parseInt(scanner.next());
         }
+        System.out.println();
 
 
 
