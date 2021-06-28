@@ -1,5 +1,6 @@
 package com.fju.sparklingdrink;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Tester {
@@ -7,6 +8,9 @@ public class Tester {
         Drink[] drinks = {new Drink1(),new Drink2(),new Drink3(),new Drink4(), new Drink5(), new Drink6(), new Drink7(),new Drink8(), new Drink9(),new Drink10()};
         Ice[] ices = {new Ice1(), new Ice2(), new Ice3(), new Ice4()};
         Topping[] toppings = {new Topping1(), new Topping2(), new Topping3()};
+
+        String item = "";
+        ArrayList<String> items = new ArrayList<>();
 
         int total = 0;
         int end = 1;
@@ -19,6 +23,7 @@ public class Tester {
         boolean topSelect = true;
 
         while (end != 0){
+            item = "";
             System.out.println("[氣泡水菜單]");
             for (Drink drink : drinks) {
                 System.out.print(drink.no);
@@ -34,6 +39,7 @@ public class Tester {
                     System.out.println("請選擇口味：");
                     kindD = Integer.parseInt(scanner.next());
                     total = total + drinks[kindD-1].getPrice();
+                    item = item + drinks[kindD-1].getName() + "/";
                     System.out.println("你選擇的口味是： " + drinks[kindD-1].getName());
                     itemSelect = false;
                 }catch (Exception e) {
@@ -54,6 +60,7 @@ public class Tester {
                 try {
                     System.out.println("請選擇冰量：");
                     kind = Integer.parseInt(scanner.next());
+                    item = item + ices[kind-1].getName() + "/";
                     System.out.println("你選擇的冰量是： " + ices[kind-1].getName());
                     itemSelect = false;
                 }catch (Exception e) {
@@ -87,10 +94,10 @@ public class Tester {
                         try {
                             System.out.println("請選擇配料：");
                             kindT = Integer.parseInt(scanner.next());
-                            //total = total + drinks[kind-1].getPrice();
-                            System.out.println("你選擇的配料是：" + toppings[kindT-1].getName());
-                            //System.out.println(" $" + toppings[kind-1].getPrice());
                             total = total + toppings[kindT-1].getPrice();
+                            item = item + toppings[kindT-1].getName();
+                            System.out.println("你選擇的配料是：" + toppings[kindT-1].getName());
+
                             System.out.println("累計金額：" + total);
                             itemSelect = false;
                         }catch (Exception e) {
@@ -107,10 +114,16 @@ public class Tester {
                 }
             }
 
+            items.add(item);
 
             System.out.println("是否繼續選購？1繼續/0結束");
             end = Integer.parseInt(scanner.next());
         }
+
+        System.out.println("[您的購買清單]");
+        items.forEach((s) -> {
+            System.out.println(s);
+        });
         System.out.println("總金額：" + total);
     }
 }
