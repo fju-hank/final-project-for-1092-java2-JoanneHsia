@@ -7,7 +7,7 @@ public class Drink1 extends Drink{
 
     @Override
     public String getName() {
-        return "原味";
+        return "原味  ";
     }
 
     @Override

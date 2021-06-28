@@ -9,7 +9,7 @@ public class Drink6 extends Drink{
     @Override
     public String getName() {
 
-        return "葡萄";
+        return "葡萄  ";
     }
 
     @Override
