@@ -4,8 +4,8 @@ com/fju/sparklingdrink/Ice1.java
  com.fju.sparklingdrink.Ice1
 com/fju/sparklingdrink/Ice4.java
  com.fju.sparklingdrink.Ice4
-com/fju/Tester.java
- com.fju.Tester
+com/fju/sparklingdrink/Drink3.java
+ com.fju.sparklingdrink.Drink3
 com/fju/sparklingdrink/Drink5.java
  com.fju.sparklingdrink.Drink5
 com/fju/sparklingdrink/Drink.java
@@ -14,45 +14,29 @@ com/fju/sparklingdrink/Topping2.java
  com.fju.sparklingdrink.Topping2
 com/fju/sparklingdrink/Ice.java
  com.fju.sparklingdrink.Ice
-com/fju/drink/Drink.java
- com.fju.drink.Drink
-com/fju/drink/Drink6.java
- com.fju.drink.Drink6
+com/fju/sparklingdrink/Drink7.java
+ com.fju.sparklingdrink.Drink7
+com/fju/sparklingdrink/Drink8.java
+ com.fju.sparklingdrink.Drink8
 com/fju/sparklingdrink/Topping3.java
  com.fju.sparklingdrink.Topping3
-com/fju/drink/Drink2.java
- com.fju.drink.Drink2
+com/fju/sparklingdrink/Drink6.java
+ com.fju.sparklingdrink.Drink6
 com/fju/sparklingdrink/Ice3.java
  com.fju.sparklingdrink.Ice3
-com/fju/drink/Drink5.java
- com.fju.drink.Drink5
+com/fju/sparklingdrink/Drink9.java
+ com.fju.sparklingdrink.Drink9
 com/fju/sparklingdrink/Topping1.java
  com.fju.sparklingdrink.Topping1
-com/fju/drink/Drink1.java
- com.fju.drink.Drink1
-com/fju/drink/Drink4.java
- com.fju.drink.Drink4
+com/fju/sparklingdrink/Drink2.java
+ com.fju.sparklingdrink.Drink2
+com/fju/sparklingdrink/Drink1.java
+ com.fju.sparklingdrink.Drink1
 com/fju/sparklingdrink/Ice2.java
  com.fju.sparklingdrink.Ice2
 com/fju/sparklingdrink/Drink4.java
  com.fju.sparklingdrink.Drink4
-com/fju/sparklingdrink/Drink7.java
- com.fju.sparklingdrink.Drink7
-com/fju/drink/Tester.java
- com.fju.drink.Tester
-com/fju/drink/Drink3.java
- com.fju.drink.Drink3
-com/fju/sparklingdrink/Drink8.java
- com.fju.sparklingdrink.Drink8
-com/fju/sparklingdrink/Drink9.java
- com.fju.sparklingdrink.Drink9
-com/fju/sparklingdrink/Drink1.java
- com.fju.sparklingdrink.Drink1
-com/fju/sparklingdrink/Drink3.java
- com.fju.sparklingdrink.Drink3
-com/fju/sparklingdrink/Drink6.java
- com.fju.sparklingdrink.Drink6
-com/fju/sparklingdrink/Drink2.java
- com.fju.sparklingdrink.Drink2
 com/fju/sparklingdrink/Tester.java
  com.fju.sparklingdrink.Tester
+com/fju/Tester.java
+ com.fju.Tester
