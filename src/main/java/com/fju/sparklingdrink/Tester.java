@@ -10,6 +10,13 @@ public class Tester {
 
         int total = 0;
         int end = 1;
+        int itemLength = 0;
+        boolean itemSelect = true;
+        Scanner scanner = new Scanner(System.in);
+        int kindD = 0;
+        int kind = 0;
+        int kindT = 0;
+        boolean topSelect = true;
 
         while (end != 0){
             System.out.println("[氣泡水菜單]");
@@ -18,12 +25,21 @@ public class Tester {
                 System.out.print(drink.getName());
                 System.out.println(" $" + drink.getPrice());
             }
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("請選擇口味：");
-            int kindD = Integer.parseInt(scanner.next());
-            //total = total + drinks[kind-1].getPrice();
-            System.out.println("你選擇的口味是： " + drinks[kindD-1].getName());
-            //System.out.println("金額：" + drinks[kind-1].getPrice());
+            itemLength = drinks.length;
+
+            //選擇口味-選項超出範圍要重新選擇
+            itemSelect = true;
+            while (itemSelect) {
+                try {
+                    System.out.println("請選擇口味：");
+                    kindD = Integer.parseInt(scanner.next());
+                    total = total + drinks[kindD-1].getPrice();
+                    System.out.println("你選擇的口味是： " + drinks[kindD-1].getName());
+                    itemSelect = false;
+                }catch (Exception e) {
+                    //重新選擇
+                }
+            }
 
 
             System.out.println("[選擇冰量]");
@@ -31,33 +47,67 @@ public class Tester {
                 System.out.print(ice.ino + " ");
                 System.out.println(ice.getName());
             }
-            System.out.println("請選擇冰量：");
-            int kind = Integer.parseInt(scanner.next());
-            System.out.println("你選擇的冰量是： " + ices[kind-1].getName());
 
-            System.out.println("[加料區]");
-            System.out.println("要加料嗎？Y/N");
-            String topp = scanner.next();
-            if (topp.equals("Y") || topp.equals("y")) {
-                System.out.println("[選擇配料]");
+            //選擇冰量-選項超出範圍要重新選擇
+            itemSelect = true;
+            while (itemSelect) {
+                try {
+                    System.out.println("請選擇冰量：");
+                    kind = Integer.parseInt(scanner.next());
+                    System.out.println("你選擇的冰量是： " + ices[kind-1].getName());
+                    itemSelect = false;
+                }catch (Exception e) {
+                    //重新選擇
+                }
+            }
+
+            //是否加料-選項超出範圍要重新選擇
+            topSelect = true;
+            while (topSelect) {
+                topSelect = false;
+                System.out.println("[加料區]");
                 for (Topping topping : toppings) {
                     System.out.print(topping.tno);
                     System.out.print(topping.getName());
                     System.out.println(" $" + topping.getPrice());
                 }
-                System.out.println("請選擇配料：");
-                int kindT = Integer.parseInt(scanner.next());
-                //total = total + drinks[kind-1].getPrice();
-                System.out.println("你選擇的配料是：" + toppings[kindT-1].getName());
-                //System.out.println(" $" + toppings[kind-1].getPrice());
-                total = total + drinks[kindD-1].getPrice()+toppings[kindT-1].getPrice();
+                System.out.println("要加料嗎？Y/N");
+                String topp = scanner.next();
 
+                if (topp.equals("Y") || topp.equals("y")) {
+                    System.out.println("[選擇配料]");
+                    for (Topping topping : toppings) {
+                        System.out.print(topping.tno);
+                        System.out.print(topping.getName());
+                        System.out.println(" $" + topping.getPrice());
+                    }
+                    //選擇配料-選項超出範圍要重新選擇
+                    itemSelect = true;
+                    while (itemSelect) {
+                        try {
+                            System.out.println("請選擇配料：");
+                            kindT = Integer.parseInt(scanner.next());
+                            //total = total + drinks[kind-1].getPrice();
+                            System.out.println("你選擇的配料是：" + toppings[kindT-1].getName());
+                            //System.out.println(" $" + toppings[kind-1].getPrice());
+                            total = total + toppings[kindT-1].getPrice();
+                            System.out.println("累計金額：" + total);
+                            itemSelect = false;
+                        }catch (Exception e) {
+                            //重新選擇
+                        }
+                    }
 
-                System.out.println("累計金額：" + total);
-            }else if (topp.equals("N") || topp.equals("n")) {
-                total = total + drinks[kindD-1].getPrice();
-                System.out.println("累計金額："+total);
+                }else if (topp.equals("N") || topp.equals("n")) {
+                    //total = total;
+                    System.out.println("累計金額："+total);
+                }else {
+                    //重新選擇
+                    topSelect = true;
+                }
             }
+
+
             System.out.println("是否繼續選購？1繼續/0結束");
             end = Integer.parseInt(scanner.next());
         }
