@@ -30,13 +30,13 @@ public class Tester {
             //System.out.println(sb.toString());
             content = sb.toString();
 
-            indexS = content.indexOf("<title>");
+            indexS = content.indexOf("<title>")+("<title>").length();
             indexE = content.indexOf("</title>");
-            title = content.substring( indexS+7,indexE);
+            title = content.substring( indexS,indexE);
 
-            indexS = content.indexOf("content");
-            indexE = content.indexOf("。\"><!");
-            text = content.substring( indexS+9,indexE);
+            indexS = content.indexOf("content")+("content").length()+2;
+            indexE = content.indexOf("。\"><!")+1;
+            text = content.substring( indexS,indexE);
 
             //System.out.println("indexS= " + indexS);
             // System.out.println("indexE= " + indexE);
