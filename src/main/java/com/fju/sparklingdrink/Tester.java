@@ -129,5 +129,15 @@ public class Tester {
             System.out.println( (i+1) + ") " + items.get(i));
         }
         System.out.println("總金額：" + total);
+        System.out.println(" ");
+
+        System.out.println("是否閱讀氣泡水相關資料？Y/N");
+        Scanner scan = new Scanner(System.in);
+        String choose = scan.next();
+        if (choose.equals("Y") || choose.equals("y")) {
+            Net net = new Net();
+            net.shownet();
+        }
+        System.out.println("謝謝惠顧");
     }
 }

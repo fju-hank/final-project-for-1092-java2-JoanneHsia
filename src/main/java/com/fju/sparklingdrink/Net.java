@@ -1,4 +1,4 @@
-package com.fju;
+package com.fju.sparklingdrink;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,20 +9,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
-public class Tester {
-    public static void main(String[] args) {
+public class Net {
+    public void shownet(){
         String content = "";
         int indexS = 0;
         int indexE = 0;
         String title = "";
         String text = "";
 
-        System.out.println("是否閱讀器泡水相關資料？");
-        Scanner scan = new Scanner(System.in);
-        String choose = scan.next();
-        if (choose.equals("Y") || choose.equals("y")) {
-
-        }
         try {
             URL url = new URL("https://www.ec-ff.com/blog/posts/fancy-water-about-sparkling-water");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -54,6 +48,5 @@ public class Tester {
         }catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
