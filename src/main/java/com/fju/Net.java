@@ -1,4 +1,4 @@
-package com.fju.sparklingdrink;
+package com.fju;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.lang.reflect.MalformedParameterizedTypeException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Scanner;
 
 public class Net {
     public void shownet(){

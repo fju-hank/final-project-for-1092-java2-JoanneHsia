@@ -1,6 +1,8 @@
-package com.fju.sparklingdrink;
+package com.fju;
 
-public class Topping3 extends Topping{
+import com.fju.Topping;
+
+public class Topping3 extends Topping {
     public Topping3(){
         tno = 3;
     }

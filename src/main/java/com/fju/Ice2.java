@@ -1,6 +1,8 @@
-package com.fju.sparklingdrink;
+package com.fju;
 
-public class Ice2 extends Ice{
+import com.fju.Ice;
+
+public class Ice2 extends Ice {
     public Ice2(){
         ino = 2;
     }

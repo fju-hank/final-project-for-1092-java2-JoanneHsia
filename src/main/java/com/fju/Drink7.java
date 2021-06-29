@@ -1,6 +1,8 @@
-package com.fju.sparklingdrink;
+package com.fju;
 
-public class Drink7 extends Drink{
+import com.fju.Drink;
+
+public class Drink7 extends Drink {
     public Drink7(){
 
         no = 7;

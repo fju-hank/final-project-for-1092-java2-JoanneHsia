@@ -1,4 +1,4 @@
-package com.fju.sparklingdrink;
+package com.fju;
 
 public abstract class Topping {
     int tno;
