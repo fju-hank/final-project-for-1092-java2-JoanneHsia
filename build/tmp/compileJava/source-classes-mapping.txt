@@ -8,8 +8,8 @@ com/fju/Drink.java
  com.fju.Drink
 com/fju/Drink1.java
  com.fju.Drink1
-com/fju/Tester.java
- com.fju.Tester
+com/fju/Drink2.java
+ com.fju.Drink2
 com/fju/Ice1.java
  com.fju.Ice1
 com/fju/Drink5.java
@@ -38,5 +38,5 @@ com/fju/Drink7.java
  com.fju.Drink7
 com/fju/Drink6.java
  com.fju.Drink6
-com/fju/Drink2.java
- com.fju.Drink2
+com/fju/Tester.java
+ com.fju.Tester
