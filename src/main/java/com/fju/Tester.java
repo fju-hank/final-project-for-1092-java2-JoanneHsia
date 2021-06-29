@@ -38,7 +38,7 @@ public class Tester {
             itemSelect = true;
             while (itemSelect) {
                 try {
-                    System.out.println("請選擇口味：");
+                    System.out.println("請選擇口味(輸入編號)：");
                     kindD = Integer.parseInt(scanner.next());
                     total = total + drinks[kindD-1].getPrice();
                     item = item + drinks[kindD-1].getName().trim() + "/";
@@ -61,7 +61,7 @@ public class Tester {
             itemSelect = true;
             while (itemSelect) {
                 try {
-                    System.out.println("請選擇冰量：");
+                    System.out.println("請選擇冰量(輸入編號)：");
                     kind = Integer.parseInt(scanner.next());
                     item = item + ices[kind-1].getName().trim() + "/";
                     System.out.println("你選擇的冰量是： " + ices[kind-1].getName());
@@ -95,7 +95,7 @@ public class Tester {
                     itemSelect = true;
                     while (itemSelect) {
                         try {
-                            System.out.println("請選擇配料：");
+                            System.out.println("請選擇配料(輸入編號)：");
                             kindT = Integer.parseInt(scanner.next());
                             total = total + toppings[kindT-1].getPrice();
                             item = item + toppings[kindT-1].getName().trim();
