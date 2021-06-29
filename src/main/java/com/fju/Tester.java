@@ -71,6 +71,7 @@ public class Tester {
                 }
             }
 
+
             //是否加料-選項超出範圍要重新選擇
             topSelect = true;
             while (topSelect) {
@@ -108,7 +109,6 @@ public class Tester {
                             //重新選擇
                         }
                     }
-
                 }else if (topp.equals("N") || topp.equals("n")) {
                     //total = total;
                     item = item + "NA";
